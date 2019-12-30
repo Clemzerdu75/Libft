@@ -17,7 +17,7 @@ This is composed of
 ## MAKEFILE
 
 | Commands        | Actions                                   |
-| --------------- | -----------------------------------------:|
+| --------------- | ----------------------------------------- |
 | `make`          | Compiles the .c files and creates the lib |
 | `make clean`    | Deletes all the .o files                  |
 | `make fclean`   | Deletes all the .o files and libft.a      |
