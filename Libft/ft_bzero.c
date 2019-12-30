@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 18:02:34 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/15 13:28:45 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/07 17:32:38 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 13:28:24 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c)
+#include "libft.h"
+
+/* Erase the data for n byte for the memory starting at the location pointed by s */
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	ft_memset(s, 0, n);
 }

@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/08 17:33:48 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/15 13:38:07 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/09 18:02:34 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 13:28:45 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+/* checks for a digit (0 through 9) */
+int		ft_isdigit(int c)
 {
-	const unsigned char	*tab1;
-	const unsigned char	*tab2;
-
-	tab1 = (const unsigned char *)s1;
-	tab2 = (const unsigned char *)s2;
-	while (n--)
-	{
-		if (*tab1 != *tab2)
-			return (*tab1 - *tab2);
-		tab1++;
-		tab2++;
-	}
-	return (0);
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
 }

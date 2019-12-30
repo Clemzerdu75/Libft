@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 18:55:58 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/15 13:28:50 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/09 17:47:06 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 13:28:35 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isprint(int c)
+/* Checks for an alphabetic character */
+int		ft_isalpha(int c)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	else
+	if (!(c >= 97 && c <= 122) &&
+			!(c >= 65 && c <= 90))
 		return (0);
+	else
+		return (1);
 }

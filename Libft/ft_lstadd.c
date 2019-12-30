@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 18:05:04 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/09 18:52:42 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/15 14:39:12 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 14:44:24 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isalnum(int c)
+/* Add the new element to the top of the list */
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	if (ft_isalpha(c) == 1 || ft_isdigit(c) == 1)
-		return (1);
-	else
-		return (0);
+	new->next = *alst;
+	*alst = new;
 }

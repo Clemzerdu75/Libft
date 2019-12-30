@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 17:32:38 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/15 13:28:24 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/07 14:54:14 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 13:41:55 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+/* Fill memory with a constant byte */
+void	*ft_memset(void *s, int c, size_t n)
 {
-	ft_memset(s, 0, n);
+	unsigned char *tab;
+
+	tab = s;
+	if (s == 0 && n == 0)
+		return (0);
+	while (n--)
+		*tab++ = (unsigned char)c;
+	return (s);
 }

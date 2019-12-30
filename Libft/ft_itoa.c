@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Calculate the number of characters contained in the digit */
 static int	ft_size(int n)
 {
 	int len;
@@ -30,6 +31,7 @@ static int	ft_size(int n)
 	return (len + 1);
 }
 
+/* Convert an integer to a char string */
 char		*ft_itoa(int n)
 {
 	char	*tab;

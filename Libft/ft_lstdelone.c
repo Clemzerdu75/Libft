@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 19:16:39 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/15 13:37:09 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/15 11:57:11 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 12:22:47 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+/* Delete and free the memory of only one link in the chain */
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	unsigned char			*tab;
-	const unsigned char		*tabi;
-
-	tab = (unsigned char *)dst;
-	tabi = (const unsigned char *)src;
-	while (n--)
-	{
-		*tab++ = *tabi++;
-		if (*(tabi - 1) == (unsigned char)c)
-		{
-			return (tab);
-		}
-	}
-	return (NULL);
+	del((*alst)->content, (*alst)->content_size);
+	free(*alst);
+	*alst = NULL;
 }

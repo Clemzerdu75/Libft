@@ -1,32 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_words_tables.c                            :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/16 21:31:40 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/16 21:35:41 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/12 10:49:39 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/12 16:29:46 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_print_words_tables(char **str)
+/* Writes a char */
+void	ft_putchar(char c)
 {
-	int i;
-	int j;
-
-	i = 0;
-	while (str[i])
-	{
-		j = 0;
-		while (str[i][j])
-		{
-			ft_putchar(str[i][j]);
-			j++;
-		}
-		ft_putchar('\n');
-		i++;
-	}
+	write(1, &c, 1);
 }

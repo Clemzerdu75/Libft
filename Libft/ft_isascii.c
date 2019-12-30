@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 14:54:14 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/15 13:41:55 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/09 18:53:38 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 13:28:41 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n)
+/* Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set */
+int		ft_isascii(int c)
 {
-	unsigned char *tab;
-
-	tab = s;
-	if (s == 0 && n == 0)
+	if (c >= 0 && c <= 127)
+		return (1);
+	else
 		return (0);
-	while (n--)
-		*tab++ = (unsigned char)c;
-	return (s);
 }

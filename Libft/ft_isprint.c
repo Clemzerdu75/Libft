@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/16 16:34:42 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/16 22:48:29 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/09 18:55:58 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 13:28:50 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_lstiter(t_list *list, void (*f)(t_list *elem))
+/* Checks for any printable character including space. */
+int		ft_isprint(int c)
 {
-	if (!list)
-		return ;
-	if (list->next)
-		ft_lstiter(list->next, f);
-	f(list);
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
 }

@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfauvell <cfauvell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/08 15:41:37 by cfauvell          #+#    #+#             */
-/*   Updated: 2018/11/15 13:37:46 by cfauvell         ###   ########.fr       */
+/*   Created: 2018/11/15 11:01:58 by cfauvell          #+#    #+#             */
+/*   Updated: 2018/11/15 17:14:06 by cfauvell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+/* Add a new link to a chain */
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	const unsigned char *tab;
+	t_list	*new;
 
-	tab = (const unsigned char *)s;
-	while (n--)
+	if (!(new = (t_list*)malloc(sizeof(*new))))
+		return (0);
+	if (!content)
 	{
-		if (*tab != (unsigned char)c)
-			tab++;
-		else
-			return ((void *)tab);
+		new->content = NULL;
+		new->content_size = 0;
 	}
-	return (0);
+	else
+	{
+		if (!(new->content = malloc(content_size)))
+			return (0);
+		ft_memcpy(new->content, content, content_size);
+		new->content_size = content_size;
+	}
+	new->next = NULL;
+	return (new);
 }

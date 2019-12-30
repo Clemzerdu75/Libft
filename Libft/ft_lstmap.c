@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Apply a function on each links of a chain and create a new list */
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*new;
