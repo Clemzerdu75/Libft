@@ -7,6 +7,8 @@ Lib of 63 functions for C programming and help for further project.
 This is composed of:
 - a Makefile (to create the lib),
 - an header file  containing a linked list prototype, all the the function prototypes and the libraries needed to make putchar, malloc and free working
+- all the functions
+- the 42 school subject in pdf
 
 ## SUMMARY
 
@@ -89,6 +91,6 @@ This is composed of:
 - tolower 
 - toupper
 
-*Don't panic! If the functions have no man they are commented, or explain in subject.pdf ;)*
+*Don't panic! If the function have no man it will be commented or explain in subject.pdf ;)*
 
 ## DETAILS
