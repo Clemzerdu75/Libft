@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Finds the first occurence of needle in haystack */
 char	*ft_strstr(const char *haystack, const char *needle)
 {
 	int s;

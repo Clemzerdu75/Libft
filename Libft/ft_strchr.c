@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Finds an occurence in a string */
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s != (char)c)

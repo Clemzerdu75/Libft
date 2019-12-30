@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/* Allocate (with malloc (3)) and return a copy of the string passed in
+parameter without the white spaces at the beginning and at the end of this string. */
 char	*ft_strtrim(char const *s)
 {
 	char	*str;

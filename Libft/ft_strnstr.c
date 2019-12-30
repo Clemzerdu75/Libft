@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Finds the first occurrence of the substring ne in the string hk */
 char	*ft_strnstr(const char *hk, const char *ne, size_t len)
 {
 	size_t	i;

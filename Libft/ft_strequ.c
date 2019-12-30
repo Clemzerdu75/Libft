@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* (Boolean) Compares two strings */
 int		ft_strequ(char const *s1, char const *s2)
 {
 	size_t i;

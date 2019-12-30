@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Clears a pointer */
 void	ft_strclr(char *s)
 {
 	if (s)

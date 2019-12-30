@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* (Boolean) compares two strings for n char */
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	size_t i;

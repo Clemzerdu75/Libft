@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/* Applies a function on each char of a string and store the result in a new string
+well allocated */
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	char	*str;

@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Print a string with a '/n' at the end */
 void	ft_putendl(char const *s)
 {
 	ft_putstr(s);

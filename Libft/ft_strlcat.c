@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Appends the NUL-terminated string src to the end of dst. It will append at most size  */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	index;

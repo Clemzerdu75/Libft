@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/* Returns the number of bytes in the string pointed to by s, excluding the
+terminating null bye ('\0'), but at most n. */
 size_t	ft_strnlen(const char *s, size_t n)
 {
 	size_t i;

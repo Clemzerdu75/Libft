@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Appends string s2 to the end of s1 for n char */
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	size_t i;

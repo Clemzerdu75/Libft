@@ -13,6 +13,7 @@
 #include "libft.h"
 #include <stdio.h>
 
+/* Create a string, allocate the right amount of memory and copy an other string */
 char	*ft_strdup(const char *s1)
 {
 	char	*src2;

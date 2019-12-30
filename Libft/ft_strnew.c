@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Create a new string of size "size" */
 char	*ft_strnew(size_t size)
 {
 	char	*str;

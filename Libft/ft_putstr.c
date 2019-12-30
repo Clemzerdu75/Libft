@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Print a string of char */
 void	ft_putstr(char const *s)
 {
 	if (s)

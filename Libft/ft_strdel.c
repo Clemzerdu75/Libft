@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Delete an array */
 void	ft_strdel(char **as)
 {
 	if (as)

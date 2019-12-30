@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/* Allocates and returns a copy of a section of the character string passed 
+in parameter. The section begins at the index start and at length len. */
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*str;

@@ -16,6 +16,8 @@
 
 #define WORDS str[i] != c && str[i] != '\0'
 
+/* Allocates and returns a array of string resulting from the cutting of str 
+according to character c */
 static int		word_count(char const *str, char c)
 {
 	int word;

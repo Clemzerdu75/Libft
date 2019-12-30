@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/*  Create a string, allocate the right amount of memory and copy an other string for n char */
 char	*ft_strndup(const char *s1, size_t n)
 {
 	char	*src2;

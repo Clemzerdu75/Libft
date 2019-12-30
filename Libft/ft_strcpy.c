@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/* Copy a string into an other */
 char	*ft_strcpy(char *dst, const char *src)
 {
 	size_t i;

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-/*  */
+/* Print a string from a file descriptor whith a '/n' at the end */
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);

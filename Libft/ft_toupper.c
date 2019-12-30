@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/* If c is a lowercase letter puts it to uppercase */
 int		ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
