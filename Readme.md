@@ -14,7 +14,6 @@ This is composed of:
 
 - Makefile
 - Functions
-- Details
 
 ## MAKEFILE
 
@@ -92,5 +91,3 @@ This is composed of:
 - toupper
 
 *Don't panic! If the function has no man it will be commented and/or explain in subject.pdf ;)*
-
-## DETAILS
