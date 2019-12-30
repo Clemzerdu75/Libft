@@ -89,6 +89,6 @@ This is composed of:
 - tolower 
 - toupper
 
-**Don't panic! If the functions have no man they are commented ;)**
+*Don't panic! If the functions have no man they are commented, or explain in subject.pdf ;)*
 
 ## DETAILS
