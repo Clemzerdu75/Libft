@@ -91,6 +91,6 @@ This is composed of:
 - tolower 
 - toupper
 
-*Don't panic! If the function have no man it will be commented or explain in subject.pdf ;)*
+*Don't panic! If the function has no man it will be commented and/or explain in subject.pdf ;)*
 
 ## DETAILS
